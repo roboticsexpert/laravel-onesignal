@@ -1,6 +1,7 @@
 <?php
 
 return array(
+    'api_url' => env('ONESIGNAL_API_URL', 'https://onesignal.com/api/v1'),
     /*
 	|--------------------------------------------------------------------------
 	| One Signal App Id
