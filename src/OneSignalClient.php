@@ -473,7 +473,7 @@ class OneSignalClient
             $promise = $this->client->postAsync($this->apiUrl . $endPoint, $this->headers);
             return (is_callable($this->requestCallback) ? $promise->then($this->requestCallback) : $promise);
         }
-        return $this->client->post($this->apiUr l . $endPoint, $this->headers);
+        return $this->client->post($this->apiUrl . $endPoint, $this->headers);
     }
 
     public function put($endPoint)
